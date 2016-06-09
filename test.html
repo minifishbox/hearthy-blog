@@ -23,47 +23,6 @@
             width: 100%;
         }
     </style>
-    <script type="text/javascript">
-        $(function(){
-            var imglist =document.getElementsByTagName("img");
-//安卓4.0+等高版本不支持window.screen.width，安卓2.3.3系统支持
-            var _width;
-            doDraw();
-
-            window.onresize = function(){
-                //捕捉屏幕窗口变化，始终保证图片根据屏幕宽度合理显示
-                doDraw();
-            }
-
-            function doDraw(){
-                _width = window.innerWidth;
-                for( var i = 0, len = imglist.length; i < len; i++){
-                    DrawImage(imglist[i],_width);
-                }
-            }
-
-            function DrawImage(ImgD,_width){
-                var image=new Image();
-                image.src=ImgD.src;
-                image.onload = function(){
-                    //限制，只对宽高都大于30的图片做显示处理
-                    if(image.width>30 && image.height>30){
-                        if(image.width>_width){
-                            ImgD.width=_width;
-                            ImgD.height=(image.height*_width)/image.width;
-                        }else{
-                            ImgD.width=image.width;
-                            ImgD.height=image.height;
-                        }
-
-                    }
-                }
-
-            }
-
-        })
-    </script>
-
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation"> <!--navbar-default选择基本模式 navbar-fixed-top使用商城固定 navbar-inverse黑体显示 role="navigation"使用响应式布局  -->
@@ -132,15 +91,14 @@
     </ol> <!-- 切换点导航 -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src=".\img\1447921063564d85a729f41.jpg" alt=" "   class="img-responsive img-circle" />
+            <img src="http://ww2.sinaimg.cn/mw1024/4eafaa70jw1ercao0lq5cj20hs0ekjt8.jpg" alt="slide 0" class="">
             <div class="carousel-caption">
-                <h3><strong>袁姗姗</strong></h3>
-                <p>从滚出娱乐圈到马甲线女王，</p>
-                <p> <strong>运动</strong>让易黑体质的袁姗姗一夜之间成了励志女神</p>
+                <h3>袁姗姗</h3>
+                <p>从易黑体制到</p>
             </div>
         </div>
         <div class="item">
-            <img src="./img/f8bc126d9144174663b809.png" alt=" " class="img-responsiveimg-circle"/>
+            <img src="http://world.chinadaily.com.cn/img/attachement/png/site1/20150825/f8bc126d9144174663b809.png" alt="...">
             <div class="carousel-caption">
                 ...
             </div>
