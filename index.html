@@ -10,12 +10,21 @@
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <style>
         body{
+           margin-bottom: 40px;
             padding-top: 50px;<!--导航条默认高50px，设置padding-top后会使得导航条不遮挡下面页面的显示 -->
+        }
+        .navbar{
+            position:fixed;/*固定作用*/
+            top:0px;
+            /*ie6下样式，加下划线表示只针对ie6 的hack */
+            _position:absolute;/* 把导航栏位置定义为绝对位置  关键*/
+            _top:expression(documentElement.scrollTop + "px"); /* 把导航栏位置放在浏览器垂直滚动条的顶端  关键 */
+            z-index:9999; /* 让导航栏浮在网页的高层位置，遇到flash和图片时候也能始终保持最外层 */
         }
         .carousel{
             height: auto;
             width: auto;
-
+        margin: 21px 0;
         }
         .carousel .item{
             height: auto;
@@ -25,8 +34,24 @@
         .carousel .item img {
             width: 100%;
         }
-        .three_box{
-            background-color: black ;
+        .container{
+            margin-top:20px;
+        }
+       .img_cycle{
+           border-radius: 50%;
+           margin:20px 0;
+       }
+       h2, .container .col-md-4 {
+       text-align: center;
+   }
+        hr{
+            border:0;
+            background-color: #b0acac;
+            height:1px;
+            margin: 20px 0;
+        }
+        footer {
+            margin: 20px 40px;
         }
     </style>
 
@@ -44,8 +69,9 @@
             <a class="navbar-brand" style="color: coral " href="#">我的健康瘦身计划</a>
         </div>
         <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">易瘦体质 <span class="sr-only">(current)</span></a></li>
+            <ul class="nav navbar-nav nav-pills">
+                <li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">气质提升</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">瘦腰 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -98,7 +124,7 @@
     </ol> <!-- 切换点导航 -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src=".\img\1447921063564d85a729f41.jpg" alt=" "   class="img-responsive img-circle" />
+            <img src=".\img\4eafaa70jw1ercao0lq5cj20hs0ekjt8.jpg" alt=" "   class="img-responsive img-circle" />
             <div class="carousel-caption">
                 <h3><strong>袁姗姗</strong></h3>
                 <p>从滚出娱乐圈到马甲线女王，</p>
@@ -106,11 +132,11 @@
             </div>
         </div>
         <div class="item">
-            <img src="./img/f8bc126d9144174663b809.png" alt=" " class="img-responsiveimg-circle"/>
+            <img src="./img/4df12e06jw1f4fx987abzj214a0qn159.jpg" alt=" " class="img-responsive img-circle"/>
             <div class="carousel-caption">
                 <h3><strong>陈意涵</strong></h3>
-                <p>从滚出娱乐圈到马甲线女王，</p>
-                <p> <strong>运动</strong>让易黑体质的袁姗姗一夜之间成了励志女神</p>
+                <p>35岁的实际年龄，18岁的身体状态</p>
+                <p> <strong>运动</strong>让陈意涵拥有了元气少女这一称号</p>
             </div>
         </div>
     </div><!-- 轮播内容 -->
@@ -124,12 +150,38 @@
     </a>
     <!-- 切换按钮 -->
 </div>
-
-    <div class="three_box">
-       <div class="box_1">我是1</div>
-        <div class="box_2">我是2</div>
-        <div class="box_3">我是3</div>
+<div class="container">
+    <h2>健身博主</h2>
+    <div class="row">
+        <div class="col-md-4">
+        <a href="http://weibo.com/u/1959764851?from=myfollow_group&is_all=1">
+            <img class="img_cycle" src="./img/74cfa373jw8f2ncsy2yu9j20yi0yjac2.jpg" alt="正骨博士"></a>
+            <p>程翀的围脖<br>
+                微博体育视频博主 青少年身体功能训练高级教练 </p>
+        </div>
+        <div class="col-md-4">
+         <a href="http://weibo.com/p/1005055127716917/home?from=page_100505&mod=TAB#place">
+             <img class="img_cycle" src="./img/005B1npzjw8eq325ktbzyj30ku0kuwfp.jpg" alt="体态大师"></a>
+<p>体态大师 <br>
+    微博运动美型博主 </p>
+        </div>
+        <div class="col-md-4">
+        <a href="http://weibo.com/u/2079795605?from=myfollow_group&is_all=1">
+            <img class="img_cycle" src="./img/7bf72995jw8eo0wpn1f4qj20ls0lsmzl.jpg" alt="壁花小姐"></a>
+            <p>壁花小姐在厨房健身 <br>
+                微博形体健身博主 </p>
+        </div>
     </div>
+    <hr>
+</div>
+<footer>
+    <P class="pull-right"><a href="#top">
+        回到顶部
+    </a></P>
+    <P>
+        @ fishbox - 杨小玲
+    </P>
+</footer>
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 

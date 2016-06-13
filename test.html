@@ -1,121 +1,142 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <style>
-        body{
-            padding-top: 50px;<!--导航条默认高50px，设置padding-top后会使得导航条不遮挡下面页面的显示 -->
-        }
-        .carousel{
-            height: 600px;
-        }
-        .carousel .item{
-            height: 600px;
-            margin-bottom: 0;
-        }
-        .carousel .item img {
-            width: 100%;
-        }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="description" content="imooc" />
+    <meta name="keywords" content="imooc" />
+    <meta name="author" content="lhq" />
+    <title>慕课网</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="http://demo.jb51.net/js/myfocus/content/templates/myfocus/js/myfocus-2.0.1.min.js"></script>
+    <script type="text/javascript">
+        myFocus.set({
+            id:'picBox'
+        });
+    </script>
 </head>
-<body>
-<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation"> <!--navbar-default选择基本模式 navbar-fixed-top使用商城固定 navbar-inverse黑体显示 role="navigation"使用响应式布局  -->
-    <div class="container"> <!--container表示居中显示  container-fluid是自适应-->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button><!--页面缩小时的下拉效果 -->
-            <a class="navbar-brand" style="color: coral " href="#">我的健康瘦身计划</a>
-        </div>
-        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">易瘦体质 <span class="sr-only">(current)</span></a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">瘦腰 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">呼吸法</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">卷腹运动</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">瘦手臂 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">体态大师</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">壁花小姐</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">正骨博士</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">瘦腿 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">体态大师</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">壁花小姐</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">正骨博士</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">气质提升</a></li>
+<body id="homePage" class="placeHold-css zh-CN">
+<div class="container">
+    <!-- === 开始报头 === -->
+    <header class="masthead clearfix" role="banner">
+        <h1 class="fLeft">
+            <a class="logo accessibility" href="/" title="logo">imooc logo</a>
+        </h1>
+        <nav role="navigation">
+            <ul class="nav-main clearfix">
+                <li><a class="active" href="/" title="首页">首页</a></li>
+                <li><a href="/" title="产品特色">产品特色</a></li>
+                <li><a href="/" title="解决方案">解决方案</a></li>
+                <li><a href="/" title="产品价格">产品价格</a></li>
+                <li><a href="/" title="帮助中心">帮助中心</a></li>
+                <li><a href="/" title="关于我们">关于我们</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">健康饮食 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">三餐分配</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">早餐</a></li>
-                        <li><a href="#">正餐</a></li>
-                        <li><a href="#">低脂零食</a></li>
-                    </ul>
-                </li>
+        </nav>
+    </header>
+    <!-- 结束报头 -->
+    <!-- === 幻灯片开始 === -->
+    <section class="slide mb20" id="picBox">
+        <div class="loading"><img src="http://img.mukewang.com/53edad8c000175cb00300029.jpg" alt="loading..." /></div>
+        <div class="pic">
+            <ul>
+                <li><img src="http://img.mukewang.com/53edad3e0001afad10000318.jpg"></li>
+                <li><img src="http://img.mukewang.com/53edad2c0001b61310000314.jpg"></li>
+                <li><img src="http://img.mukewang.com/53edad1600019ae910000310.jpg"></li>
             </ul>
         </div>
-    </div>
-</nav>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    </ol> <!-- 切换点导航 -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="http://ww2.sinaimg.cn/mw1024/4eafaa70jw1ercao0lq5cj20hs0ekjt8.jpg" alt="slide 0" class="">
-            <div class="carousel-caption">
-                <h3>袁姗姗</h3>
-                <p>从易黑体制到</p>
+    </section>
+    <!-- 幻灯片结束 -->
+    <!-- === 滚动新闻开始 === -->
+    <section class="scroll-news clearfix mb20">
+        <h2>滚动新闻</h2>
+        <p><a href="/">这是滚动新闻</a></p>
+    </section>
+    <!-- 滚动新闻结束 -->
+    <!-- === 课程区域开始 === -->
+    <section class="course clearfix mb20">
+        <div class="common">
+            <img src="http://img.mukewang.com/53edad54000119fb03300130.jpg" alt="Bootstrap">
+            <p><a href="/" title="玩转Bootstrap">玩转Bootstrap</a></p>
+        </div>
+        <div class="common">
+            <img src="http://img.mukewang.com/53edad690001260a03300130.jpg" alt="企业网站实战">
+            <p><a href="/" title="企业网站实战">企业网站实战</a></p>
+        </div>
+        <div class="common mr0">
+            <img src="http://img.mukewang.com/53edad7a0001cde803300130.jpg" alt="javascript">
+            <p><a href="/" title="JavaScript">JavaScript</a></p>
+        </div>
+    </section>
+    <!-- 结束课程区域 -->
+    <!-- === 开始主体内容 === -->
+    <main class="clearfix mb20" role="main">
+        <!-- ===news区域开始=== -->
+        <div class="news common">
+            <h3>新闻中心</h3>
+            <ul class="news-content">
+                <li class="clearfix">
+                    <div class="date"><br />8月<br />23日</div>
+                    <div class="info clearfix">
+                        <h4>学习计划之"Android攻城狮初养成"</h4>
+                        <p><a href="/">想成为Android攻城狮?想开发一款专属App?没有任何基础的你,应该从何学起?</a></p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="date"><br />8月<br />23日</div>
+                    <div class="info clearfix">
+                        <h4>学习计划之"Android攻城狮初养成"</h4>
+                        <p><a href="/">想成为Android攻城狮?想开发一款专属App?没有任何基础的你,应该从何学起?</a></p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="date"><br />8月<br />23日</div>
+                    <div class="info clearfix">
+                        <h4>学习计划之"Android攻城狮初养成"</h4>
+                        <p><a href="/">想成为Android攻城狮?想开发一款专属App?没有任何基础的你,应该从何学起?</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- news区域结束 -->
+        <div class="activity common">
+            <h3>热门活动</h3>
+            <div class="activity-content">
+                <img src="http://img.mukewang.com/53edacdd0001b8e804820302.jpg" alt="2048" width="280" height="120" />
+                <ul class="code-z">
+                    <li><a href="/">慕课网2048源码征集</a></li>
+                    <li><a href="/">慕课网2048源码征集</a></li>
+                    <li><a href="/">慕课网2048源码征集</a></li>
+                    <li><a href="/">慕课网2048源码征集</a></li>
+                    <li><a href="/">慕课网2048源码征集</a></li>
+                </ul>
             </div>
         </div>
-        <div class="item">
-            <img src="http://world.chinadaily.com.cn/img/attachement/png/site1/20150825/f8bc126d9144174663b809.png" alt="...">
-            <div class="carousel-caption">
-                ...
+        <div class="contact common mr0">
+            <h3>联系我们</h3>
+            <div class="contact-content">
+                <address class="mb20">
+                    联系我们<br />
+                    讲师招募：邹同学<br />
+                    电话：18888888888<br />
+                    QQ:4744373X<br />
+                    Email:4744373X@qq.com<br />
+                </address>
+                <address>
+                    联系我们<br />
+                    讲师招募：邹同学<br />
+                    电话：18888888888<br />
+                    QQ:4744373X<br />
+                    Email:4744373X@qq.com<br />
+                </address>
             </div>
         </div>
-    </div><!-- 轮播内容 -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-    <!-- 切换按钮 -->
-</div>
-<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </main>
+    <!-- 结束主体内容 -->
 
+    <!-- === 开始页脚 === -->
+    <footer class="footer" role="contentinfo">
+        <p><small>Copyright © 2013 imooc.com All Rights Reserved 京ICP备 13046642号-2</small></p>
+    </footer>
+    <!-- 结束页脚 -->
+</div>
 </body>
 </html>
