@@ -8,53 +8,7 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <style>
-        body{
-           margin-bottom: 40px;
-            padding-top: 50px;<!--导航条默认高50px，设置padding-top后会使得导航条不遮挡下面页面的显示 -->
-        }
-        .navbar{
-            position:fixed;/*固定作用*/
-            top:0px;
-            /*ie6下样式，加下划线表示只针对ie6 的hack */
-            _position:absolute;/* 把导航栏位置定义为绝对位置  关键*/
-            _top:expression(documentElement.scrollTop + "px"); /* 把导航栏位置放在浏览器垂直滚动条的顶端  关键 */
-            z-index:9999; /* 让导航栏浮在网页的高层位置，遇到flash和图片时候也能始终保持最外层 */
-        }
-        .carousel{
-            height: auto;
-            width: auto;
-        margin: 21px 0;
-        }
-        .carousel .item{
-            height: auto;
-            margin-bottom: 0;
-            background-color: black ;
-        }
-        .carousel .item img {
-            width: 100%;
-        }
-        .container{
-            margin-top:20px;
-        }
-       .img_cycle{
-           border-radius: 50%;
-           margin:20px 0;
-       }
-       h2, .container .col-md-4 {
-       text-align: center;
-   }
-        hr{
-            border:0;
-            background-color: #b0acac;
-            height:1px;
-            margin: 20px 0;
-        }
-        footer {
-            margin: 20px 40px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css " >
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation"> <!--navbar-default选择基本模式 navbar-fixed-top使用商城固定 navbar-inverse黑体显示 role="navigation"使用响应式布局  -->
@@ -71,48 +25,22 @@
         <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav nav-pills">
                 <li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li>
-                <li><a href="#">气质提升</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#modal_1"  >易瘦体质</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">瘦腰 <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">局部减肥 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">呼吸法</a></li>
+                        <li><a href="#tab_1">瘦腰</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">卷腹运动</a></li><!-- 加个注释-->
+                        <li><a href="#tab_2">瘦手臂</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#tab_3">瘦腿</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#tab_4">气质提升</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">瘦手臂 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">体态大师</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">壁花小姐</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">正骨博士</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">瘦腿 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">体态大师</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">壁花小姐</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">正骨博士</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">气质提升</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">健康饮食 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">三餐分配</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">早餐</a></li>
-                        <li><a href="#">正餐</a></li>
-                        <li><a href="#">低脂零食</a></li>
-                    </ul>
-                </li>
+                <li class="active"><a href="/test">减脂健康饮食</a></li>
             </ul>
         </div>
     </div>
@@ -156,23 +84,67 @@
         <div class="col-md-4">
         <a href="http://weibo.com/u/1959764851?from=myfollow_group&is_all=1">
             <img class="img_cycle" src="./img/74cfa373jw8f2ncsy2yu9j20yi0yjac2.jpg" alt="正骨博士"></a>
-            <p>程翀的围脖<br>
+                <p>程翀的围脖<br>
                 微博体育视频博主 青少年身体功能训练高级教练 </p>
         </div>
         <div class="col-md-4">
          <a href="http://weibo.com/p/1005055127716917/home?from=page_100505&mod=TAB#place">
              <img class="img_cycle" src="./img/005B1npzjw8eq325ktbzyj30ku0kuwfp.jpg" alt="体态大师"></a>
-<p>体态大师 <br>
-    微博运动美型博主 </p>
+                <p>体态大师 <br>
+                微博运动美型博主 </p>
         </div>
         <div class="col-md-4">
         <a href="http://weibo.com/u/2079795605?from=myfollow_group&is_all=1">
             <img class="img_cycle" src="./img/7bf72995jw8eo0wpn1f4qj20ls0lsmzl.jpg" alt="壁花小姐"></a>
-            <p>壁花小姐在厨房健身 <br>
+                <p>壁花小姐在厨房健身 <br>
                 微博形体健身博主 </p>
         </div>
     </div>
     <hr>
+    <div>
+        <ul class="nav nav-tabs" role="tablist" id="tab-list">
+            <li role="presentation" class="active"><a href="#tab_1" aria-controls="home" role="tab" data-toggle="tab">瘦腰</a></li>
+            <li role="presentation"><a href="#tab_2" aria-controls="profile" role="tab" data-toggle="tab">瘦手臂</a></li>
+            <li role="presentation"><a href="#tab_3" aria-controls="messages" role="tab" data-toggle="tab">瘦腿</a></li>
+            <li role="presentation"><a href="#tab_4" aria-controls="settings" role="tab" data-toggle="tab">气质提升</a></li>
+        </ul><!-- 标签页 -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="tab_1">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            双手双膝撑在地面上（姿势自然舒适即可），腰背保持挺直。首先，缓慢地呼出所有空气，同时肚皮尽量往内收缩。然后保持尽量长的时间的收腹状态，浅而轻缓地呼吸。腹部深处应该有“笑到肚子酸”或“用力咳嗽”时的感觉。到腹部收不住了为1组，做3-5组
+                        </p>
+                        <p>核心要点：尽力保持收腹状态，肚子深处一定会有紧张或酸的感觉。如果肚子没有感觉、胸腔和肋骨明显鼓起，那就是做反了。
+                            其他的用鼻子还是嘴呼吸都是次要的。</p>
+                    </div>
+                    <div class="col-md-6">
+                     <embed type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" quality="high" height="480" width="480" src="http://video.weibo.com/player/1034:54f8170b0b0fbfda2010d58293842979/v.swf"/>
+                    </div>
+                    <div class="col-md-6">
+                        <embed type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" quality="high" height="480" width="480" src="http://video.weibo.com/player/1034:4ad389111fb4b706c83229cd7e832979/v.swf"/>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab_2">
+                <video width="400" controls>
+                    <source src="./video/a.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab_3">
+                <embed type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" quality="high" height="480" width="480" src="http://video.weibo.com/player/1034:74fde72570737ce0a9c137de2f10fe25/v.swf"/>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab_4">
+                <embed type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" quality="high" height="480" width="480" src="http://video.weibo.com/player/1034:a8a035ed46a9fd9260770ae5235311a3/v.swf"/>
+            </div>
+        </div>
+
+    </div><!-- 标签页 内容-->
 </div>
 
 <footer>
@@ -182,9 +154,32 @@
     <P>
         @ fishbox - 杨小玲
     </P>
-</footer>
+</footer><!-- 底部版权 -->
+<div class="modal fade" id="modal_1">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">易瘦体质</h4>
+        </div>
+        <div class="modal-body">
+            <p>先进行体态肥、肿肥、肌肉肥、比例肥的减肥训练。不要把减脂肪作为一个急功近利的目的，应该让减脂肪融入日常的良好生活习惯，成为生活的一部分（规律的睡眠、合理的运动、多喝水、有选择的健康饮食等）</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">了解</button>
+        </div>
+    </div>
+</div>
+</div><!-- 静态提示框 -->
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+<script>
+    $(document).ready(function () {
+        $("#bs-example-navbar-collapse-1 .dropdown-menu a").click(function(){
+            var href=$ (this).attr("href");
+            $("#tab-list a[href='" +href+"']").tab("show");
+        });
+    });
+</script><!-- 导航栏标签页跳转 -->
 </body>
 </html>
