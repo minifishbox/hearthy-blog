@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>健康每一天</title>
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -40,7 +40,7 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="/test">减脂健康饮食</a></li>
+                <li class="active"><a href=".\test.html">减脂健康饮食</a></li>
             </ul>
         </div>
     </div>
@@ -148,9 +148,10 @@
 </div>
 
 <footer>
-    <P class="pull-right"><a href="#top">
-        回到顶部
-    </a></P>
+    <div class="go-top pull-right">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+</div>
     <P>
         @ fishbox - 杨小玲
     </P>
@@ -178,6 +179,17 @@
         $("#bs-example-navbar-collapse-1 .dropdown-menu a").click(function(){
             var href=$ (this).attr("href");
             $("#tab-list a[href='" +href+"']").tab("show");
+        });
+    });
+    $(function() {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 100)
+                $('div.go-top').show();
+            else
+                $('div.go-top').hide();
+        });
+        $('div.go-top').click(function() {
+            $('html, body').animate({scrollTop: 0}, 1000);
         });
     });
 </script><!-- 导航栏标签页跳转 -->
