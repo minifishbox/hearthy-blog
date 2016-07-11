@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <link rel="stylesheet" href="style.css " >
+    <link rel="stylesheet"  href="style.css " type="text/css">
+    <link href="normalize.css " rel="stylesheet" type="text/css">
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation"> <!--navbar-default选择基本模式 navbar-fixed-top使用商城固定 navbar-inverse黑体显示 role="navigation"使用响应式布局  -->
@@ -40,7 +41,7 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href=".\test.html">减脂健康饮食</a></li>
+                <li class="active"><a href="#">减脂健康饮食</a></li>
             </ul>
         </div>
     </div>
@@ -79,28 +80,34 @@
     <!-- 切换按钮 -->
 </div>
 <div class="container">
-    <h2>健身博主</h2>
+    <div class="container-title">
+        <h2 >健身博主</h2>
+    </div>
+
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 weiBo">
         <a href="http://weibo.com/u/1959764851?from=myfollow_group&is_all=1">
-            <img class="img_cycle" src="./img/74cfa373jw8f2ncsy2yu9j20yi0yjac2.jpg" alt="正骨博士"></a>
-                <p>程翀的围脖<br>
-                微博体育视频博主 青少年身体功能训练高级教练 </p>
+            <img class="img_cycle" src="./img/74cfa373jw8f2ncsy2yu9j20yi0yjac2.jpg" alt="正骨博士">
+        </a>
+                <h4 class="img-title">程翀的围脖</h4>
+                <span> 青少年身体功能训练高级教练</span>
+
         </div>
         <div class="col-md-4">
          <a href="http://weibo.com/p/1005055127716917/home?from=page_100505&mod=TAB#place">
              <img class="img_cycle" src="./img/005B1npzjw8eq325ktbzyj30ku0kuwfp.jpg" alt="体态大师"></a>
-                <p>体态大师 <br>
-                微博运动美型博主 </p>
+                <h4 class="img-title">体态大师 </h4>
+                <span> 微博运动美型博主 </span>
         </div>
         <div class="col-md-4">
         <a href="http://weibo.com/u/2079795605?from=myfollow_group&is_all=1">
-            <img class="img_cycle" src="./img/7bf72995jw8eo0wpn1f4qj20ls0lsmzl.jpg" alt="壁花小姐"></a>
-                <p>壁花小姐在厨房健身 <br>
-                微博形体健身博主 </p>
+            <img class="img_cycle" src="./img/7bf72995jw8eo0wpn1f4qj20ls0lsmzl.jpg" alt="壁花小姐">
+        </a>
+                <h4 class="img-title">壁花小姐</h4>
+                <span> 微博形体健身博主 </span>
         </div>
     </div>
-    <hr>
+    <hr class="hr-1">
     <div>
         <ul class="nav nav-tabs" role="tablist" id="tab-list">
             <li role="presentation" class="active"><a href="#tab_1" aria-controls="home" role="tab" data-toggle="tab">瘦腰</a></li>
@@ -112,50 +119,88 @@
             <div role="tabpanel" class="tab-pane active" id="tab_1">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>
-                            双手双膝撑在地面上（姿势自然舒适即可），腰背保持挺直。首先，缓慢地呼出所有空气，同时肚皮尽量往内收缩。然后保持尽量长的时间的收腹状态，浅而轻缓地呼吸。腹部深处应该有“笑到肚子酸”或“用力咳嗽”时的感觉。到腹部收不住了为1组，做3-5组
+                        <hr class="underline-top">
+                        <h2>气场大法</h2>
+                        <hr class="underline-bottom">
+                        <p><span> 核心要点：</span>尽力保持收腹状态，肚子深处一定会有紧张或酸的感觉。如果肚子没有感觉、胸腔和肋骨明显鼓起，那就是做反了。
+                            其他的用鼻子还是嘴呼吸都是次要的。
                         </p>
-                        <p>核心要点：尽力保持收腹状态，肚子深处一定会有紧张或酸的感觉。如果肚子没有感觉、胸腔和肋骨明显鼓起，那就是做反了。
-                            其他的用鼻子还是嘴呼吸都是次要的。</p>
                     </div>
                     <div class="col-md-6">
-                     <embed type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" quality="high" height="480" width="480" src="http://video.weibo.com/player/1034:54f8170b0b0fbfda2010d58293842979/v.swf"/>
-                    </div>
-                    <div class="col-md-6">
-                        <embed type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" quality="high" height="480" width="480" src="http://video.weibo.com/player/1034:4ad389111fb4b706c83229cd7e832979/v.swf"/>
-                    </div>
-                    <div class="col-md-6">
-                        <p>
-
-                        </p>
+                            <video width="100%"  controls>
+                                <source src="./video/b.mp4" type="video/mp4">
+                            </video>
                     </div>
                 </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="tab_2">
-                <video width="400" controls>
-                    <source src="./video/a.mp4" type="video/mp4">
-                </video>
+                <div class="row">
+                    <div class="col-md-6">
+                        <video width="100%" controls>
+                                    <source src="./video/b.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-6 col-md-6-content">
+                        <hr class="underline-top">
+                        <h2>气场大法</h2>
+                        <hr class="underline-bottom">
+                        <p><span> 核心要点：</span>尽力保持收腹状态，肚子深处一定会有紧张或酸的感觉。如果肚子没有感觉、胸腔和肋骨明显鼓起，那就是做反了。
+                            其他的用鼻子还是嘴呼吸都是次要的。</p>
+                    </div>
+                </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="tab_3">
-                <embed type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" quality="high" height="480" width="480" src="http://video.weibo.com/player/1034:74fde72570737ce0a9c137de2f10fe25/v.swf"/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <hr class="underline-top">
+                        <h2>气场大法</h2>
+                        <hr class="underline-bottom">
+                        <p><span> 核心要点：</span>尽力保持收腹状态，肚子深处一定会有紧张或酸的感觉。如果肚子没有感觉、胸腔和肋骨明显鼓起，那就是做反了。
+                            其他的用鼻子还是嘴呼吸都是次要的。</p>
+                    </div>
+                    <div class="col-md-6">
+                        <video width="100%" controls>
+                                <source src="./video/b.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="tab_4">
-                <embed type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" quality="high" height="480" width="480" src="http://video.weibo.com/player/1034:a8a035ed46a9fd9260770ae5235311a3/v.swf"/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <video width="100%" controls>
+                            <source src="./video/b.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-6">
+                        <hr class="underline-top">
+                        <h2>气场大法</h2>
+                        <hr class="underline-bottom">
+                        <p class=""><span> 核心要点：</span>尽力保持收腹状态，肚子深处一定会有紧张或酸的感觉。如果肚子没有感觉、胸腔和肋骨明显鼓起，那就是做反了。
+                            其他的用鼻子还是嘴呼吸都是次要的。</p>
+                    </div>
+                </div>
             </div>
         </div>
 
     </div><!-- 标签页 内容-->
-</div>
 
-<footer>
-    <div class="go-top pull-right">
+</div>
+<div class="go-top">
     <div class="arrow"></div>
     <div class="stick"></div>
+</div><!-- 返回顶部-->
+<div id="wrap">
+    <div id="main" class="clearfix">
+        <div id="content">
+        </div>
+        <div id="side">
+        </div>
+    </div>
 </div>
-    <P>
-        @ fishbox - 杨小玲
-    </P>
-</footer><!-- 底部版权 -->
+<div id="footer">
+    <p>fishbox</p>
+</div>
 <div class="modal fade" id="modal_1">
 <div class="modal-dialog">
     <div class="modal-content">
