@@ -42,10 +42,9 @@ body{
     filter:alpha(opacity=100);
     transform: scale(1.1) translateY(-10px);
 }
-h2,h4, .container .col-md-4 {
+h1,h4, .container .col-md-4 {
     text-align: center;
     font-family: "Josefin","Myriad Pro",Arial,sans-serif;
-    text-shadow: 1px 1px 1px rgba(192, 35, 29, 0.2);
 }
 /*分区下划线*/
 .hr-1{
@@ -95,28 +94,31 @@ video{
     padding: 20px;
     text-align: center;
     font-family: "Josefin","Myriad Pro",Arial,sans-serif;
+
+}
+h1{
     text-shadow: 1px 1px 1px rgba(192, 35, 29, 0.2);
+    font-weight: bold;
 }
 /*底部*/
 footer {
+    height: 100px;
     margin-top: 20px;
     margin-bottom:0;
+background-color: black;
+
+}
+#footer {
+
+    padding-top:40px;
     text-align: center;
     font-family: "Josefin","Myriad Pro",Arial,sans-serif;
     text-shadow: 5px 5px 5px rgba(197, 163, 255, 0.2);
-
 }
-#wrap {height: 100%;}
-body > #wrap {height: auto; min-height: 100%;}
-#main {padding-bottom: 150px;
-background-color: black}  /* 必须使用和footer相同的高度 */
-#footer {position: relative;
-    margin-top: -150px; /* footer高度的负值 */
-    height: 150px;
-    clear:both;}
-
-.copyright span{
-    display: block;
+#footer p{
+    text-align: center;
+    font-family: "Josefin","Myriad Pro",Arial,sans-serif;
+    text-shadow: 5px 5px 5px rgba(197, 163, 255, 0.2);
 }
 /*顶部返回*/
 .go-top{
