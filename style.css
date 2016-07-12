@@ -13,6 +13,7 @@ body{
     z-index:9999; /* 让导航栏浮在网页的高层位置，遇到flash和图片时候也能始终保持最外层 */
 }
 .carousel{
+
     height: auto;
     width: auto;
     margin: 21px 0;
@@ -67,10 +68,6 @@ h1,h4, .container .col-md-4 {
 .col-md-6{
     padding-top: 20px;
 }
-video{
-    padding: 0 20px;
-    border-color: #0088cc;
-}
 .underline-top{
     border:0;
     background-color: #000000;
@@ -96,20 +93,19 @@ video{
     font-family: "Josefin","Myriad Pro",Arial,sans-serif;
 
 }
-h1{
+h4{
     text-shadow: 1px 1px 1px rgba(192, 35, 29, 0.2);
     font-weight: bold;
 }
 /*底部*/
-footer {
+#footer {
     height: 100px;
     margin-top: 20px;
     margin-bottom:0;
-background-color: black;
+background-color: rgba(3, 20, 35, 1);
 
 }
-#footer {
-
+#footer div{
     padding-top:40px;
     text-align: center;
     font-family: "Josefin","Myriad Pro",Arial,sans-serif;
@@ -128,7 +124,7 @@ background-color: black;
     z-index: 999999;
     position:fixed;
     bottom: 100px;
-    left: 92%;
+   right: 2%;
     margin-left: 40px;
     border: 1px solid #b0acac;
     width: 40px;
