@@ -1,0 +1,745 @@
+
+@font-face {
+  font-family: 'Flat-UI-Icons';
+  src: url('../fonts/flat-ui-icons-regular.eot');
+  src: url('../fonts/flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/flat-ui-icons-regular.woff') format('woff'),
+  url('../fonts/flat-ui-icons-regular.ttf') format('truetype'),
+  url('../fonts/flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
+}
+[class^="fui-"],
+[class*="fui-"] {
+  font-family: 'Flat-UI-Icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fui-triangle-up:before {
+  content: "\e600";
+}
+.fui-triangle-down:before {
+  content: "\e601";
+}
+.fui-triangle-up-small:before {
+  content: "\e602";
+}
+.fui-triangle-down-small:before {
+  content: "\e603";
+}
+.fui-triangle-left-large:before {
+  content: "\e604";
+}
+.fui-triangle-right-large:before {
+  content: "\e605";
+}
+.fui-arrow-left:before {
+  content: "\e606";
+}
+.fui-arrow-right:before {
+  content: "\e607";
+}
+.fui-plus:before {
+  content: "\e608";
+}
+.fui-cross:before {
+  content: "\e609";
+}
+.fui-check:before {
+  content: "\e60a";
+}
+.fui-radio-unchecked:before {
+  content: "\e60b";
+}
+.fui-radio-checked:before {
+  content: "\e60c";
+}
+.fui-checkbox-unchecked:before {
+  content: "\e60d";
+}
+.fui-checkbox-checked:before {
+  content: "\e60e";
+}
+.fui-info-circle:before {
+  content: "\e60f";
+}
+.fui-alert-circle:before {
+  content: "\e610";
+}
+.fui-question-circle:before {
+  content: "\e611";
+}
+.fui-check-circle:before {
+  content: "\e612";
+}
+.fui-cross-circle:before {
+  content: "\e613";
+}
+.fui-plus-circle:before {
+  content: "\e614";
+}
+.fui-pause:before {
+  content: "\e615";
+}
+.fui-play:before {
+  content: "\e616";
+}
+.fui-volume:before {
+  content: "\e617";
+}
+.fui-mute:before {
+  content: "\e618";
+}
+.fui-resize:before {
+  content: "\e619";
+}
+.fui-list:before {
+  content: "\e61a";
+}
+.fui-list-thumbnailed:before {
+  content: "\e61b";
+}
+.fui-list-small-thumbnails:before {
+  content: "\e61c";
+}
+.fui-list-large-thumbnails:before {
+  content: "\e61d";
+}
+.fui-list-numbered:before {
+  content: "\e61e";
+}
+.fui-list-columned:before {
+  content: "\e61f";
+}
+.fui-list-bulleted:before {
+  content: "\e620";
+}
+.fui-window:before {
+  content: "\e621";
+}
+.fui-windows:before {
+  content: "\e622";
+}
+.fui-loop:before {
+  content: "\e623";
+}
+.fui-cmd:before {
+  content: "\e624";
+}
+.fui-mic:before {
+  content: "\e625";
+}
+.fui-heart:before {
+  content: "\e626";
+}
+.fui-location:before {
+  content: "\e627";
+}
+.fui-new:before {
+  content: "\e628";
+}
+.fui-video:before {
+  content: "\e629";
+}
+.fui-photo:before {
+  content: "\e62a";
+}
+.fui-time:before {
+  content: "\e62b";
+}
+.fui-eye:before {
+  content: "\e62c";
+}
+.fui-chat:before {
+  content: "\e62d";
+}
+.fui-home:before {
+  content: "\e62e";
+}
+.fui-upload:before {
+  content: "\e62f";
+}
+.fui-search:before {
+  content: "\e630";
+}
+.fui-user:before {
+  content: "\e631";
+}
+.fui-mail:before {
+  content: "\e632";
+}
+.fui-lock:before {
+  content: "\e633";
+}
+.fui-power:before {
+  content: "\e634";
+}
+.fui-calendar:before {
+  content: "\e635";
+}
+.fui-gear:before {
+  content: "\e636";
+}
+.fui-bookmark:before {
+  content: "\e637";
+}
+.fui-exit:before {
+  content: "\e638";
+}
+.fui-trash:before {
+  content: "\e639";
+}
+.fui-folder:before {
+  content: "\e63a";
+}
+.fui-bubble:before {
+  content: "\e63b";
+}
+.fui-export:before {
+  content: "\e63c";
+}
+.fui-calendar-solid:before {
+  content: "\e63d";
+}
+.fui-star:before {
+  content: "\e63e";
+}
+.fui-star-2:before {
+  content: "\e63f";
+}
+.fui-credit-card:before {
+  content: "\e640";
+}
+.fui-clip:before {
+  content: "\e641";
+}
+.fui-link:before {
+  content: "\e642";
+}
+.fui-tag:before {
+  content: "\e643";
+}
+.fui-document:before {
+  content: "\e644";
+}
+.fui-image:before {
+  content: "\e645";
+}
+.fui-facebook:before {
+  content: "\e646";
+}
+.fui-youtube:before {
+  content: "\e647";
+}
+.fui-vimeo:before {
+  content: "\e648";
+}
+.fui-twitter:before {
+  content: "\e649";
+}
+.fui-spotify:before {
+  content: "\e64a";
+}
+.fui-skype:before {
+  content: "\e64b";
+}
+.fui-pinterest:before {
+  content: "\e64c";
+}
+.fui-path:before {
+  content: "\e64d";
+}
+.fui-linkedin:before {
+  content: "\e64e";
+}
+.fui-google-plus:before {
+  content: "\e64f";
+}
+.fui-dribbble:before {
+  content: "\e650";
+}
+.fui-behance:before {
+  content: "\e651";
+}
+.fui-stumbleupon:before {
+  content: "\e652";
+}
+.fui-yelp:before {
+  content: "\e653";
+}
+.fui-wordpress:before {
+  content: "\e654";
+}
+.fui-windows-8:before {
+  content: "\e655";
+}
+.fui-vine:before {
+  content: "\e656";
+}
+.fui-tumblr:before {
+  content: "\e657";
+}
+.fui-paypal:before {
+  content: "\e658";
+}
+.fui-lastfm:before {
+  content: "\e659";
+}
+.fui-instagram:before {
+  content: "\e65a";
+}
+.fui-html5:before {
+  content: "\e65b";
+}
+.fui-github:before {
+  content: "\e65c";
+}
+.fui-foursquare:before {
+  content: "\e65d";
+}
+.fui-dropbox:before {
+  content: "\e65e";
+}
+.fui-android:before {
+  content: "\e65f";
+}
+.fui-apple:before {
+  content: "\e660";
+}
+.share {
+  background-color: #eff0f2;
+  position: relative;
+  border-radius: 6px;
+}
+.share ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+}
+.share li {
+  font-size: 15px;
+  line-height: 1.4;
+  padding-top: 11px;
+}
+.share li:before,
+.share li:after {
+  content: " ";
+  display: table;
+}
+.share li:after {
+  clear: both;
+}
+.share li:first-child {
+  padding-top: 0;
+}
+.share .toggle {
+  float: right;
+  margin: 0;
+}
+.share .btn {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.share-label {
+  float: left;
+  font-size: 15px;
+  line-height: 1.4;
+  padding-top: 5px;
+  width: 50%;
+}
+.video-js {
+  background-color: transparent;
+  position: relative;
+  padding-bottom: 47px;
+  font-size: 0;
+  vertical-align: middle;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-top-radius: 6px;
+  width: 100% !important;
+  height: auto !important;
+}
+.video-js .vjs-tech {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.video-js:-moz-full-screen {
+  position: absolute;
+}
+.video-js:-webkit-full-screen {
+  width: 100% !important;
+  height: 100% !important;
+}
+.vjs-fullscreen {
+  position: fixed;
+  overflow: hidden;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border-top-radius: 0;
+}
+.vjs-fullscreen .vjs-control-bar {
+  margin-top: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/*全屏时*/
+.vjs-fullscreen .vjs-tech {
+  background-color: #000000;
+}
+.vjs-poster {
+  margin: 0 auto;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+  border-top-radius: 6px;
+}
+/*播放条背景*/
+.vjs-control-bar {
+  position: relative;
+  height: 47px;
+  color: #ffffff;
+  background: black;
+  margin-top: -1px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.vjs-control-bar.vjs-fade-out {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.vjs-text-track-display {
+  text-align: center;
+  position: absolute;
+  bottom: 4em;
+  left: 1em;
+  right: 1em;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+.vjs-text-track {
+  display: none;
+  color: #ffffff;
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: .1em;
+  background-color: rgba(255, 250, 250, 0.5);
+}
+.vjs-subtitles {
+  color: #ffffff;
+}
+.vjs-captions {
+  color: #fc6;
+}
+.vjs-tt-cue {
+  display: block;
+}
+.vjs-fade-in {
+  visibility: visible !important;
+  opacity: 1 !important;
+  -webkit-transition: visibility 0s linear 0s, opacity .3s linear;
+          transition: visibility 0s linear 0s, opacity .3s linear;
+}
+.vjs-fade-out {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  -webkit-transition: visibility 0s linear 1.5s, opacity 1.5s linear;
+          transition: visibility 0s linear 1.5s, opacity 1.5s linear;
+}
+.vjs-control {
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+}
+.vjs-control:focus {
+  outline: 0;
+}
+.vjs-control > div {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.vjs-control-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*开始键*/
+.vjs-play-control {
+  cursor: pointer;
+  height: 47px;
+  width: 58px;
+}
+.vjs-play-control > div {
+  position: relative;
+  height: 47px;
+}
+.vjs-play-control > div:before,
+.vjs-play-control > div:after {
+  position: absolute;
+  font-family: "Flat-UI-Icons";
+  color: #fffafa;
+  font-size: 16px;
+  top: 38%;
+  left: 50%;
+  margin: -0.5em 0 0 -0.5em;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: color .25s, opacity .25s;
+          transition: color .25s, opacity .25s;
+}
+.vjs-play-control > div:after {
+  content: "\e615";
+}
+.vjs-play-control > div:before {
+  content: "\e616";
+}
+.vjs-paused .vjs-play-control:hover > div:before {
+  color: #fffafa;
+}
+.vjs-paused .vjs-play-control > div:after {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.vjs-paused .vjs-play-control > div:before {
+  opacity: 1;
+  -webkit-filter: none;
+          filter: none;
+}
+.vjs-playing .vjs-play-control:hover > div:after {
+  color: #417ffe;
+}
+.vjs-playing .vjs-play-control > div:after {
+  opacity: 1;
+  -webkit-filter: none;
+          filter: none;
+}
+.vjs-playing .vjs-play-control > div:before {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.vjs-rewind-control {
+  width: 5em;
+  cursor: pointer !important;
+}
+.vjs-rewind-control > div {
+  width: 19px;
+  height: 16px;
+  background: none transparent;
+  margin: .5em auto 0;
+}
+/*声音开关*/
+.vjs-mute-control {
+  float: right;
+  margin: 14px 0;
+  cursor: pointer !important;
+}
+.vjs-mute-control:hover > div,
+.vjs-mute-control:focus > div {
+  color: #417ffe;
+}
+
+.vjs-mute-control > div {
+  height: 18px;
+  color: #fffafa;
+}
+.vjs-mute-control > div:after,
+.vjs-mute-control > div:before {
+  font-family: "Flat-UI-Icons";
+  font-size: 16px;
+  line-height: 18px;
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -0.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: color .25s, opacity .25s;
+          transition: color .25s, opacity .25s;
+}
+.vjs-mute-control > div:after {
+  content: "\e617";
+}
+.vjs-mute-control > div:before {
+  content: "\e618";
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.vjs-mute-control.vjs-vol-0 > div:after {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.vjs-mute-control.vjs-vol-0 > div:before {
+  opacity: 1;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.vjs-volume-control,
+.vjs-volume-level,
+.vjs-volume-handle,
+.vjs-volume-bar {
+  display: none;
+}
+/*时间条*/
+.vjs-progress-control {
+  height: 12px;
+  position: absolute;
+  left: 60px;
+  right: 160px;
+  width: auto;
+  top: 18px;
+  background: #fffafa;
+  border-radius: 32px;
+}
+
+.vjs-progress-holder {
+  position: relative;
+  cursor: pointer !important;
+  padding: 0;
+  margin: 0;
+  height: 12px;
+}
+.vjs-play-progress,
+.vjs-load-progress {
+  display: block;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  border-radius: 32px;
+}
+/*已经播放的进度条颜色*/
+.vjs-play-progress {
+  background: #fffafa;
+  left: -1px;
+  position: absolute;
+  top: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+/*进度条刷新后背景*/
+.vjs-load-progress {
+  background: #fffafa;
+}
+.vjs-load-progress[style*="100%"],
+.vjs-load-progress[style*="99%"] {
+  border-radius: 32px;
+}
+/*进度条圆点*/
+.vjs-seek-handle {
+  background-color: #417ffe;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  position: absolute;
+  margin: -3px 0 0 -3px;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s;
+          transition: background-color 0.25s;
+}
+.vjs-seek-handle[style*="95."] {
+  margin-left: 3px;
+}
+.vjs-seek-handle[style="left: 0%;"] {
+  margin-left: -2px;
+}
+.vjs-seek-handle:hover,
+.vjs-seek-handle:focus {
+  background-color: #fffafa;
+}
+.vjs-seek-handle:active {
+  background-color: #fffafa;
+}
+.vjs-time-controls {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: normal;
+  width: auto;
+  height: auto;
+  position: absolute;
+}
+/*时间分界线*/
+.vjs-time-divider {
+  color: #fffafa;
+  font-size: 14px;
+  position: absolute;
+  right: 114px;
+  top: 11px;
+}
+.vjs-remaining-time {
+  display: none;
+}
+.vjs-current-time {
+  right: 122px;
+  top: 16px;
+}
+/*时间*/
+.vjs-duration {
+  color: #fffafa;
+  right: 85px;
+  top: 16px;
+}
+.vjs-fullscreen-control {
+  cursor: pointer;
+  float: right;
+  margin: 14px 15px;
+}
+.vjs-fullscreen-control:hover > div,
+.vjs-fullscreen-control:focus > div {
+  color: #fffafa;
+}
+.vjs-fullscreen-control > div {
+  height: 18px;
+  color: #fffafa;
+}
+.vjs-fullscreen-control > div:before {
+  font-family: "Flat-UI-Icons";
+  content: "\e619";
+  font-size: 16px;
+  line-height: 18px;
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -0.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: color .25s, opacity .25s;
+          transition: color .25s, opacity .25s;
+}
+.vjs-menu-button {
+  display: none !important;
+}
+.vjs-loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #417ffe;
+  display: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 10px;
+  margin: -8px 0 0 -8px;
+  -webkit-animation: sharp 2s ease infinite;
+          animation: sharp 2s ease infinite;
+}
