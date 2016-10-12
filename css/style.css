@@ -22,10 +22,12 @@ body{
     height: auto;
     margin-bottom: 0;
     background-color: black ;
+    font-size: 1em;
 }
 .carousel .item img {
     width: 100%;
 }
+
 /*微博博主*/
 .container{
     margin-top:20px;
@@ -102,7 +104,7 @@ h4{
     height: 100px;
     margin-top: 20px;
     margin-bottom:0;
-background-color: rgba(3, 20, 35, 1);
+background-color: rgb(0, 0, 0);
 
 }
 #footer div{
